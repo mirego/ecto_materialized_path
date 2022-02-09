@@ -22,4 +22,8 @@ defmodule EctoMaterializedPath.Path do
   def load(value), do: { :ok, value }
 
   def type, do: EctoMaterializedPath.Path
+
+  def equal?(term1, term2), do: term1 == term2
+
+  def embed_as(_), do: :self
 end
